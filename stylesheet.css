@@ -53,25 +53,15 @@ section.main-content {
         }
     }
 
+
     section.box {
         background-color: #ffffff;
-        /*padding: 20px;*/
         border-radius: 10px;
         min-height: 400px;
         display: flex;
         justify-content: space-between;
         width: 90%;
         margin: 5px auto 70px;
-
-        italic {
-            font-size: 12px;
-            font-style: italic;
-        }
-
-        redfont {
-            color: red;
-            font-size: 12px;
-        }
 
         .left-side {
             width: 25%;
@@ -107,52 +97,89 @@ section.main-content {
             }
         }
 
-        .center-side {
-            width: 20%;
-            background-color: white;
-            padding: 10px;
-            border-right: 1px dashed;
-            padding-right: 20px;
-            margin-right: 20px;
-        }
 
         .right-side {
-            width: 40%;
-            background-color: white;
-            /*padding: 10px;*/
-            border: 4px dashed green;
-            display: flex;
-            gap: 1rem;
-            flex-direction: column;
 
-            red {
-                color: red;
-            }
+            width: 70%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin: 5px auto 70px;
+            flex-direction: column;
+            gap: 10px;
 
             div.faculty-person {
                 border: 1px solid blue;
 
-                h3 {
+                h5 {
                     margin: 0;
+                    &.role {
+                        font-style: italic;
+                    }
+                    }
+
+                    h3 {
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+
+                        &.credits {
+                            font-style: italic;
+                        }
+                    }
                 }
 
-                p {
-                    margin: 0;
+                .right-side-row {
+                    display: flex;
 
-                    &.credits {
-                        font-style: italic;
+                    h3 {
+                        &.red {
+                            color: red;
+                        }
+
+
+                    }
+
+                    p {
+                        &.red {
+                            color: red;
+                        }
+                    }
+
+                    .side-a {
+                        background-color: white;
+                        width: 40%;
+                        display: flex;
+                        gap: 1rem;
+                        flex-direction: column;
+                        border-right: 1px dashed;
+
+
+                    }
+
+                    .side-b {
+                        width: 60%;
+                        background-color: white;
+                        padding: 10px;
+                        padding-right: 20px;
+                        margin-right: 20px;
                     }
                 }
             }
         }
+
     }
 }
-
-section.footer {
+section.footers {
     background-color: #60663E;
     text-align: center;
     color: white;
     font-size: 8px;
     padding: 8px 0;
 }
+
 
