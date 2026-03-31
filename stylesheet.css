@@ -87,7 +87,7 @@ section.main-content {
             gap: 10px;
 
             div.faculty-person {
-                border: 1px solid blue;
+                /*border: 1px solid blue;*/
                 margin-bottom: 10px;
 
                 h5 {
@@ -115,7 +115,6 @@ section.main-content {
                 flex-direction: column;
                 justify-content: space-between;
                 height: 100%;
-                flex-grow: 1;
 
 
                 .right-side-row {
@@ -156,7 +155,7 @@ section.main-content {
                 }
             }
             nav.secondary {
-                border: 1px solid red;
+                /*border: 1px solid red;*/
                 min-height: 20px;
                 padding-right: 20px;
                 font-size: 10px;
@@ -176,16 +175,14 @@ section.main-content {
                         text-decoration: underline;
                     }
                 }
-                nav.secondary.bottom {
-                    margin-top: auto; /* pushes it to the bottom */
-                    justify-content: flex-end; /* aligns links to the right */
-                    padding-right: 20px;
-                }
+
                 &.bottom {
                     font-size: 9px;
                     display: flex;
                     flex-direction: row;
-
+                    align-self: flex-end;
+                    padding-right: 20px;
+                    justify-content: space-between;
                     a {
                         text-transform: lowercase;
                     }
