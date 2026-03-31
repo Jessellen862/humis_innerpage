@@ -11,7 +11,7 @@ div#parent {
 }
 
 section.images {
-    margin: 0 auto;
+    margin: 0;
 }
 
 section.main-content {
@@ -23,37 +23,6 @@ section.main-content {
         font-size: 10px;
     }
 
-    nav.secondary {
-        border: 1px solid red;
-        min-height: 20px;
-        padding-right: 20px;
-        font-size: 10px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 3px;
-
-        a {
-            margin: 0 5px;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        &.bottom {
-            font-size: 9px;
-
-            a {
-                text-transform: lowercase;
-            }
-        }
-    }
-
-
     section.box {
         background-color: #ffffff;
         border-radius: 10px;
@@ -61,7 +30,9 @@ section.main-content {
         display: flex;
         justify-content: space-between;
         width: 90%;
-        margin: 5px auto 70px;
+        margin: 0;
+        align-items: stretch;
+
 
         .left-side {
             width: 25%;
@@ -69,9 +40,14 @@ section.main-content {
             flex-direction: column;
             justify-content: space-between;
             background-color: lightgrey;
-            border-right: 1px #60663e solid;
+            border-right: 1px #60663E solid;
             padding-right: 20px;
             margin-right: 20px;
+            align-self: stretch;
+
+
+
+
 
             nav {
                 a {
@@ -106,12 +82,13 @@ section.main-content {
             min-height: 400px;
             display: flex;
             justify-content: space-between;
-            margin: 5px auto 70px;
+            margin: 0;
             flex-direction: column;
             gap: 10px;
 
             div.faculty-person {
                 border: 1px solid blue;
+                margin-bottom: 10px;
 
                 h5 {
                     margin: 0;
@@ -132,6 +109,14 @@ section.main-content {
                         }
                     }
                 }
+
+            .right-side-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                flex-grow: 1;
+
 
                 .right-side-row {
                     display: flex;
@@ -170,10 +155,48 @@ section.main-content {
                     }
                 }
             }
+            nav.secondary {
+                border: 1px solid red;
+                min-height: 20px;
+                padding-right: 20px;
+                font-size: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 3px;
+
+
+                a {
+                    margin: 0 5px;
+                    color: black;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                nav.secondary.bottom {
+                    margin-top: auto; /* pushes it to the bottom */
+                    justify-content: flex-end; /* aligns links to the right */
+                    padding-right: 20px;
+                }
+                &.bottom {
+                    font-size: 9px;
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        text-transform: lowercase;
+                    }
+
+                }
+            }
+            }
         }
 
     }
-}
+
 section.footers {
     background-color: #60663E;
     text-align: center;
